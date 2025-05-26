@@ -1,0 +1,37 @@
+Documentation
+This script uses the turtle graphics library to create various colorful patterns and art, including polygons, random walks, spirographs, and a Damien Hirst-inspired dot painting using colors extracted from an image.
+
+Functions
+1. all_gons()
+Draws regular polygons from triangles (3 sides) up to decagons (10 sides), each in a different color from the colors list.
+
+Turtle shape: "turtle"
+Colors: Cycles through a predefined list.
+Behavior: Resets heading before each polygon.
+2. random_wals()
+Creates a random walk pattern with the turtle, using random RGB colors for each segment.
+
+Turtle shape: "turtle"
+Pen size: 10
+Speed: Fastest
+Color: Random RGB for each step
+Movement: 50 units forward, then a random turn (0, 90, 180, or 270 degrees)
+Steps: 5000
+3. spirograph()
+Draws a spirograph by repeatedly drawing circles and rotating the heading.
+
+Turtle shape: "turtle"
+Speed: Fastest
+Color: Random RGB for each circle
+Circles: 100, each rotated by 3.6 degrees
+4. damien_hirtz(image: str, n: int)
+Creates a grid of colored dots inspired by Damien Hirst, using colors extracted from an image.
+
+Turtle shape: "turtle"
+Speed: Fastest
+Start position: (-200, -200)
+Colors: Extracted from the given image using color_extractor.extract_colors
+Grid: 10x10 dots
+Dot size: 20
+Spacing: 50 units between dots
+Color selection: Random from extracted palette, sorted by red value
